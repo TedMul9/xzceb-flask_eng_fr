@@ -1,4 +1,3 @@
-""" English to french and French to english translation module"""
 import json
 import os
 from ibm_watson import LanguageTranslatorV3
@@ -6,6 +5,7 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from dotenv import load_dotenv
 
 load_dotenv()
+
 APIKEY= os.environ['apikey']
 URL = os.environ['url']
 VERSION = '2018-05-01'
